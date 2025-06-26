@@ -1,0 +1,240 @@
+@font-face {
+    font-family: sauce;
+    src: url(./WHOA\ SAUCE\ PERSONAL\ USE.ttf);
+}
+@font-face {
+    font-family:ho;
+    src: url(./HooeyDEMO-Regular.otf);
+}
+@font-face {
+    font-family:ff;
+    src: url(./FFCommaTrial-Regular.ttf);
+}
+@font-face {
+    font-family:shoot;
+    src: url(./Shooting\ Star.ttf);
+}
+/* Remove spinner arrows in Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove spinner arrows in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background: rgb(64, 190, 39);
+}
+.gameTitle{
+    font-family: shoot;
+    color: rgb(255, 251, 0);
+    letter-spacing: 5px;
+    font-size: 65px;
+}
+.container{
+    cursor:pointer;
+    display: flex;
+    flex-direction:column;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    /* background: white; */
+}
+.title-container{
+    height: 25%;
+    /* background: red; */
+    text-align: center;
+    align-content: center;
+}
+.title-container h3{
+    font-size: 28px;
+    font-family: ff;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.playGround-container{
+    display: flex;
+    height: 70%;
+}
+.playGround-container div{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    justify-content:center;
+    align-items: center;
+}
+.playGround-container div input{
+    height: 150px;
+    width:150px;
+    font-family: ff;
+    font-size: 45px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    border: 10px solid rgb(236, 233, 11);
+    background: rgb(33, 141, 6);
+    font-weight: bold;
+}
+.playGround-container div .guess-btn{
+    margin-top: 20px; 
+    font-size: 24px;
+    font-family:shoot;
+    background: rgba(17, 126, 153, 0.333);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    color: #c6e70c;
+    cursor: pointer;
+
+}
+.playGround-container div .guessing-number{
+width: 80%;
+height: 60%;
+border-radius: 50%;
+text-align: center;
+background-color: #c6e70c;
+font-family: shoot;
+font-size: 80px;
+color: rgb(30, 128, 6);
+margin-bottom: 20px;
+}
+.playGround-container div h4{
+font-size: 34px;
+font-family: ff;
+color: white;
+}
+.playGround-container div .restart-btn{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    font-size: 50px;
+    border: none;
+    outline: 0;
+    background: rgb(30, 128, 6);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    color: rgb(80, 221, 231);
+    border: 5px solid rgb(188, 247, 25);
+    cursor: wait;
+    /* cursor: url("./pencil.png"); */
+}
+.playGround-container div h5{
+    color: white;
+    font-family: ff;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+body {
+      /* cursor: url('./pencil.png'), auto; */
+}
+
+@media(width<460px) {
+.gameTitle{
+    font-size: 32px;
+}
+.title-container h3{
+    font-size: 20px;
+}
+.playGround-container{
+    margin-left: auto;
+    margin-right:auto;
+    flex-direction:column;
+     justify-content:center;
+    align-items: center;
+}
+.playGround-container div{
+     width:100%;
+     height: 33.3%;
+}
+.playGround-container div input{
+    width: 110px;
+    height: 150px;
+    font-size: 32px;
+    padding: 15px;
+}
+.playGround-container div .guess-btn{
+    font-size: 18px;
+    width: 80px;
+     margin-top: 8px; 
+     margin-bottom: 8px; 
+}
+.playGround-container div .guessing-number{
+    width: 155px;
+    height: 160px;
+    font-size: 50px;
+}
+.playGround-container div h4{
+font-size: 24px;
+margin-bottom: 15px;
+}
+}
+@media(width<380px) {
+.gameTitle{
+    font-size: 26px;
+}
+.title-container h3{
+    font-size: 16px;
+}
+.playGround-container{
+    margin-left: auto;
+    margin-right:auto;
+    flex-direction:column;
+     justify-content:center;
+    align-items: center;
+}
+.playGround-container div{
+     width:100%;
+     height: 33.3%;
+}
+.playGround-container div input{
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    padding: 15px;
+}
+.playGround-container div .guess-btn{
+    font-size: 16px;
+    width: 70px;
+     margin-top: 8px; 
+     margin-bottom: 15px; 
+}
+.playGround-container div .guessing-number{
+    width: 145px;
+    height: 150px;
+    font-size: 60px;
+}
+.playGround-container div h4{
+font-size: 18px;
+margin-bottom: 23px;
+}
+.playGround-container div .restart-btn{
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    font-size: 45px;
+    border: none;
+    outline: 0;
+    background: rgb(30, 128, 6);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    color: rgb(80, 221, 231);
+    border: 5px solid rgb(188, 247, 25);
+    cursor: wait;
+    /* cursor: url("./pencil.png"); */
+}
+}
