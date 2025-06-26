@@ -147,6 +147,9 @@ body {
 .gameTitle{
     font-size: 32px;
 }
+.title-container{
+    height: 20%;
+}
 .title-container h3{
     font-size: 20px;
 }
@@ -187,8 +190,12 @@ margin-bottom: 15px;
 .gameTitle{
     font-size: 26px;
 }
+.title-container{
+    height: 20%;
+}
 .title-container h3{
     font-size: 16px;
+    /* border: 1px solid black; */
 }
 .playGround-container{
     margin-left: auto;
