@@ -172,11 +172,15 @@ body {
      /* border: 1px solid black; */
 }
 .playGround-container div input{
-    /* box-sizing: border-box; */
-    width: 85px;
-    height: 85px;
-    font-size: 22px;
-    /* padding: 15px; */
+   width: 95px;
+  height: 95px;
+  font-size: 24px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .playGround-container div .guess-btn{
     font-size: 18px;
@@ -237,7 +241,13 @@ margin-bottom: 12px;
     box-sizing: border-box;
     width: 95px;
     height: 95px;
-    font-size:22px;
+     font-size: 24px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     /* padding: 5px; */
 }
 .playGround-container div .guess-btn{
@@ -274,7 +284,13 @@ font-size: 18px;
 .playGround-container div input{
     width: 80px;
     height: 100px;
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .playGround-container div .restart-btn{
     width: 100px;
