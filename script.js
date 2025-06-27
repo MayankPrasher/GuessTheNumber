@@ -3,6 +3,7 @@ let chances = 20;
 let highScore = 0;
 document.querySelector(".guessing-number").textContent = "?";
 document.querySelector(".remaining-turns").textContent = chances;
+document.querySelector(".highScore").textContent = "0";
 document.querySelector(".guess-btn").addEventListener("click",function(){
     const guessedNumber = Number(document.querySelector(".input").value);
     if(guessedNumber == randomNumber && chances>1){
