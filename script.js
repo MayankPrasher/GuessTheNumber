@@ -3,17 +3,36 @@ let chances = 20;
 let highScore = 0;
 document.querySelector(".guessing-number").textContent = "?";
 document.querySelector(".remaining-turns").textContent = chances;
+document.querySelector(".status").textContent =  "Game Status...";
 document.querySelector(".highScore").textContent = "0";
+document.querySelector(".highScore").style.display = "none";
 document.querySelector(".guess-btn").addEventListener("click",function(){
     const guessedNumber = Number(document.querySelector(".input").value);
     if(guessedNumber == randomNumber && chances>1){
         document.querySelector(".status").textContent =  "You Won";
         document.querySelector(".guessing-number").textContent = randomNumber;
         if(highScore<chances){
+            var myCanvas = document.createElement('canvas');
+            document.body.appendChild(myCanvas);
+            var myConfetti = confetti.create(myCanvas, {
+            resize: true,
+            useWorker: true
+            });
+            myConfetti({
+            particleCount: 1000,
+            spread:500
+            // any other options from the global
+            // confetti function
+            });
+            setTimeout(() => {
+            document.querySelector("canvas").style.display = "none";
+            }, 3000); 
             highScore = chances;
-            document.querySelector(".highScore").textContent = highScore;
+            document.querySelector(".highScore").style.display = "block";
+            document.querySelector(".highScore").textContent = "High Score: " +highScore;
         }
     }else if(guessedNumber < randomNumber && chances>1){
+
         document.querySelector(".status").textContent =  "Too Low";
         chances--;
         document.querySelector(".remaining-turns").textContent = chances;
@@ -27,6 +46,8 @@ document.querySelector(".guess-btn").addEventListener("click",function(){
 });
 document.querySelector(".restart-btn").addEventListener("click",function(){
     randomNumber = Math.trunc(Math.random()*20+1);
+    document.querySelector(".highScore").style.display = "block";
+    document.querySelector(".highScore").textContent = "High Score: " +highScore;
     document.querySelector(".guessing-number").textContent = "?";
     chances = 20;
     document.querySelector(".remaining-turns").textContent = chances;
