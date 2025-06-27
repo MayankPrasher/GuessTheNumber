@@ -175,7 +175,7 @@ body {
 .playGround-container div input{
    width: 100px;
   height: 100px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.8;
   box-sizing: border-box;
   text-align: center;
@@ -242,7 +242,7 @@ margin-bottom: 12px;
     box-sizing: border-box;
     width: 100px;
     height: 100px;
-     font-size: 24px;
+     font-size: 18px;
    line-height: 1.8;
   box-sizing: border-box;
   text-align: center;
@@ -285,7 +285,7 @@ font-size: 18px;
 .playGround-container div input{
     width: 90px;
     height: 100px;
-    font-size: 24px;
+    font-size:18px;
      line-height: 1.8;
     box-sizing: border-box;
     text-align: center;
