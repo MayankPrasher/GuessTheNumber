@@ -230,7 +230,7 @@ margin-bottom: 12px;
 .playGround-container div{
      width:100%;
      height: 33.3%;
-      border: 1px solid black;
+      /* border: 1px solid black; */
 }
 .playGround-container div input{
     width: 85px;
