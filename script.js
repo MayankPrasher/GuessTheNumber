@@ -11,21 +11,6 @@ document.querySelector(".guess-btn").addEventListener("click",function(){
     if(guessedNumber == randomNumber && chances>1){
         document.querySelector(".status").textContent =  "You Won";
         document.querySelector(".guessing-number").textContent = randomNumber;
-        var myCanvas = document.createElement('canvas');
-            document.body.appendChild(myCanvas);
-            var myConfetti = confetti.create(myCanvas, {
-            resize: true,
-            useWorker: true
-            });
-            myConfetti({
-            particleCount: 1000,
-            spread:500
-            // any other options from the global
-            // confetti function
-            });
-            setTimeout(() => {
-            document.querySelector("canvas").style.display = "none";
-            }, 3000); 
         if(highScore<chances){
             highScore = chances;
             document.querySelector(".highScore").style.display = "block";
@@ -53,5 +38,7 @@ document.querySelector(".restart-btn").addEventListener("click",function(){
     document.querySelector(".remaining-turns").textContent = chances;
     document.querySelector(".status").textContent =  "Game Status...";
 })
+
+
 
 
