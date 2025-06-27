@@ -311,7 +311,7 @@ font-size: 18px;
     margin-bottom: 30px;
     color: rgb(80, 221, 231);
     border: 5px solid rgb(188, 247, 25);
-    cursor: wait;
+    cursor: pointer;
     /* cursor: url("./pencil.png"); */
 }
 }

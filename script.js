@@ -11,8 +11,7 @@ document.querySelector(".guess-btn").addEventListener("click",function(){
     if(guessedNumber == randomNumber && chances>1){
         document.querySelector(".status").textContent =  "You Won";
         document.querySelector(".guessing-number").textContent = randomNumber;
-        if(highScore<chances){
-            var myCanvas = document.createElement('canvas');
+        var myCanvas = document.createElement('canvas');
             document.body.appendChild(myCanvas);
             var myConfetti = confetti.create(myCanvas, {
             resize: true,
@@ -27,6 +26,7 @@ document.querySelector(".guess-btn").addEventListener("click",function(){
             setTimeout(() => {
             document.querySelector("canvas").style.display = "none";
             }, 3000); 
+        if(highScore<chances){
             highScore = chances;
             document.querySelector(".highScore").style.display = "block";
             document.querySelector(".highScore").textContent = "High Score: " +highScore;
@@ -53,4 +53,5 @@ document.querySelector(".restart-btn").addEventListener("click",function(){
     document.querySelector(".remaining-turns").textContent = chances;
     document.querySelector(".status").textContent =  "Game Status...";
 })
+
 
